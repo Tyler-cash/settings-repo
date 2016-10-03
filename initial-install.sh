@@ -7,4 +7,4 @@ sudo pacman -Syu
 sudo pacman -S bash-completion
 
 #REQUIRES bash-completion
-cp .bashrc ~/
+cp user/.bashrc ~/
