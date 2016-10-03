@@ -10,7 +10,6 @@ parse_git_branch() {
 }
 
 alias ls='ls --color=auto'
-export 
 PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]:\[\e[36m\]\W\[\e[m\]\[\e[31m\]]\[\e[32m\]\$(parse_git_branch) \[\e[35m\]\$\[\e[m\] "
 
 #Imports git autocomplete
