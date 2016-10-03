@@ -8,3 +8,4 @@ sudo pacman -S bash-completion
 
 #REQUIRES bash-completion
 cp user/.bashrc ~/
+cp user/.gitconfig ~/
