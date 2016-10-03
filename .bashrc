@@ -6,4 +6,4 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+export PS1="\h@\u_\l \W\[$(tput sgr0)\]"
