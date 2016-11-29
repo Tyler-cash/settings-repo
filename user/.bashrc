@@ -2,6 +2,17 @@
 # ~/.bashrc
 #
 
+# ansi color escape sequences
+prompt_black='\[\e[30m\]'
+prompt_red='\[\e[31m\]'
+prompt_green='\[\e[32m\]'
+prompt_yellow='\[\e[33m\]'
+prompt_blue='\[\e[34m\]'
+prompt_magenta='\[\e[35m\]'
+prompt_cyan='\[\e[36m\]'
+prompt_white='\[\e[37m\]'
+prompt_default_color='\[\e[0m\]'
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -10,7 +21,7 @@ parse_git_branch() {
 }
 
 alias ls='ls --color=auto'
-PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]:\[\e[36m\]\W\[\e[m\]\[\e[31m\]]\[\e[32m\]\$(parse_git_branch) \[\e[35m\]\$\[\e[m\] "
+PS1="$prompt_red[$prompt_cyan\u$prompt_red@$prompt_yellow\h$prompt_red:$prompt_white\W$prompt_red]$prompt_green$(parse_git_branch)$prompt_red $ $prompt_default_color\[$(tput sgr0)\]"
 
 #Imports git autocomplete
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
