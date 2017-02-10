@@ -19,6 +19,6 @@ cp user/.profile ~/
 if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
 
 wget https://gist.githubusercontent.com/Tyler-cash/9f61e8778dd69e7df87e7cfba8c91914/raw/5ed3976fb82e3ee03ed603c75692307dcc5f973d/public_key
-cat public_key >> ~/.ssh/authorized_keys
 mkdir ~/.ssh
+cat public_key >> ~/.ssh/authorized_keys
 rm public_key
