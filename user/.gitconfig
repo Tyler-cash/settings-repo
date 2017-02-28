@@ -20,3 +20,5 @@
   untracked = cyan
 [alias]
 	it = !git init && git commit -m \"root\" --allow-empty
+[push]
+	default = simple
