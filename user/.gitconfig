@@ -1,8 +1,8 @@
 [user]
-	name = Tyler Cash
-	email = contact@tylercash.xyz
+  name = Tyler Cash
+  email = contact@tylercash.xyz
 [core]
-	editor = nano
+  editor = nano
 [color]
   ui = auto
 [color "branch"]
@@ -19,6 +19,6 @@
   changed = green
   untracked = cyan
 [alias]
-	it = !git init && git commit -m \"root\" --allow-empty
+  it = !git init && git commit -m \"root\" --allow-empty
 [push]
-	default = simple
+  default = simple
