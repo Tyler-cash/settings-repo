@@ -22,3 +22,5 @@ wget https://gist.githubusercontent.com/Tyler-cash/9f61e8778dd69e7df87e7cfba8c91
 mkdir ~/.ssh
 cat public_key >> ~/.ssh/authorized_keys
 rm public_key
+cat update_tasks.sh >> /etc/cron.daily/updates
+chmod 755 /etc/cron.daily/updates
