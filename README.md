@@ -1,9 +1,5 @@
-###Target System
+### Target System
 Ubuntu 16.04
 
-###Installation
-Run install script as curren user. This is usually done through the use of `. <Script name>`.
-
-
-###Other Notes
-This is a personal settings repository, so it may be filled with 'hacky' solutions to various issues
+### Why is this public?
+I don't always put ssh keys on my various servers, so leaving this public saves me a lot of time!
