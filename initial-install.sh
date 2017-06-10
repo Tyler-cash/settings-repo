@@ -6,6 +6,10 @@ echo 'set completion-ignore-case On' >> ~/.inputrc
 #updates system's information
 sudo apt update
 
+#Updates timezone and reconfigures clock
+ln -fs /usr/share/zoneinfo/Australia/Sydney /etc/localtime
+dpkg-reconfigure -f noninteractive tzdata
+
 #Install needed depencies for config files in script
 sudo apt install bash-completion
 
