@@ -21,7 +21,7 @@ parse_git_branch() {
 }
 
 alias ls='ls --color=auto'
-PS1="$prompt_red[$prompt_cyan\u$prompt_red@$prompt_yellow\h$prompt_red:$prompt_white\W$prompt_red]$prompt_green$(parse_git_branch)$prompt_red $ $prompt_default_color\[$(tput sgr0)\]"
+PS1="$prompt_red[$prompt_cyan\u$prompt_red@$prompt_yellow\h$prompt_red:$prompt_white\W$prompt_red]$prompt_green\$(parse_git_branch)$prompt_red $ $prompt_white"
 
 #Imports git autocomplete
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
