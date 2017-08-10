@@ -23,5 +23,8 @@ parse_git_branch() {
 alias ls='ls --color=auto'
 PS1="$prompt_red[$prompt_cyan\u$prompt_red@$prompt_yellow\h$prompt_red:$prompt_white\W$prompt_red]$prompt_green\$(parse_git_branch)$prompt_red $ $prompt_white"
 
-#Imports git autocomplete
-[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+# If ~./inputrc doesn't exist yet, first include the original /etc/inputrc so we don't override it
+if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
+
+# Add option to ~/.inputrc to enable case-insensitive tab completion
+echo 'set completion-ignore-case On' >> ~/.inputrc
