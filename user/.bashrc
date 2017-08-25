@@ -28,3 +28,8 @@ if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
 
 # Add option to ~/.inputrc to enable case-insensitive tab completion
 echo 'set completion-ignore-case On' >> ~/.inputrc
+
+# Provides git autocomplete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
