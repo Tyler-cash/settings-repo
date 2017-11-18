@@ -33,3 +33,9 @@ echo 'set completion-ignore-case On' >> ~/.inputrc
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+alias gl="git log --graph --abbrev-commit --decorate --date=relative --format=f$
+alias gs="git status"
+alias gc="git commit -m"
+alias gca="git commit --amend"
+alias ga="git add"
